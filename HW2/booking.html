@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <style>
+        body {
+            font-family: Calibri;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        #input1,
+        #input2,
+        label {
+            font-size: 15px;
+            width: 140px;
+        }
+
+        #input3 {
+            font-size: 15px;
+            width: 65px;
+        }
+
+        #currency1 {
+            color: rgb(230, 73, 17);
+            font-size: 15px;
+            width: 65px;
+        }
+
+        #search {
+            background-color: rgb(230, 73, 17);
+            border-radius: 5px;
+            border: none;
+            color: white;
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Booking Form</h2>
+    <table>
+        <tr>
+            <th><label for="flying-form"><b>Flying from</b></label></th>
+            <th><label for="flying-to"><b>To</b></label></th>
+        </tr>
+        <tr>
+            <td><input type="text" id="input1" name="flying-from" value="Karachi,Pakist"></td>
+            <td><input type="text" id="input1" name="flying-to" value="Islamabad,Palistan"></td>
+        </tr>
+
+        <tr>
+            <th><label for="depart"><b>Departing</b></label></th>
+            <th><label for="return"><b>Returning</b></label></th>
+        </tr>
+        <tr>
+            <td><input type="date" id="input2" name="depart"></td>
+            <td><input type="date" id="input2" name="return"></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th><label for="adult"><b>Adult</b></label></th>
+            <th><label for="child"><b>Child</b></label></th>
+            <th><label for="infant"><b>Infant</b></label></th>
+            <th><label for="currency" id="currency1"><b>Currency</b></label></th>
+        </tr>
+        <tr>
+            <td><input type="number" id="input3" name="quantity1" min="1"></td>
+            <td><input type="number" id="input3" name="quantity2" min="0"></td>
+            <td><input type="number" id="input3" name="quantity3" min="0"></td>
+            <td>
+                <select name="currency">
+                    <option value="prk">PKR</option>
+                    <option value="usd">USD</option>
+                    <option value="jpy">JPY</option>
+                    <option value="eur">EUR</option>
+                </select>
+        </tr>
+        </tr>
+    </table><br>
+
+    <button type="button" id="search"><b>SEARCH</b></button>
+
+</body>
+
+</html>

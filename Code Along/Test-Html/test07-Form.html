@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 07 - Html Form </title>
+    <style>
+        form {
+            background-color: aquamarine;
+            width: 500px;
+            text-align: right;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Html Form</h2>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+
+
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="firstname">First name</label>
+            <input type="text" name="firstname"><br><br>
+
+            <label for="lastname">Last name</label>
+            <input type="text" name="lastname"><br><br>
+        </fieldset>
+
+        <fieldset style="width: 200px; margin-right: 250px; border: 1px dashed blue;">
+            <legend>Gender:</legend>
+            <input type="radio" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Status:</legend>
+            <input type="radio" name="status" value="single">
+            <label for="single">Single</label>
+            <input type="radio" name="status" value="married">
+            <label for="married">Married</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vehicle:</legend>
+            <input type="checkbox" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br><br>
+        </fieldset>
+
+        <span style="margin-right: 0px;">Model</span>
+        <select id="cars" name="cars" size="4" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+
+
+        <fieldset>
+            <legend>Comment:</legend>
+            <textarea name="message" rows="5" cols="40">
+กรุณากรอกข้อมูลเพิ่มเติม
+        </textarea>
+        </fieldset><br><br>
+
+
+        <p>Browser</p>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+
+
+</html>
